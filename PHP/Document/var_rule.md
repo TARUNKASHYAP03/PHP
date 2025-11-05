@@ -1,5 +1,6 @@
-
+<!-- markdownlint-disable MD041 -->
 ---
+<!-- markdownlint-enable MD041 -->
 
 # 📘 PHP Variables — Complete Guide (Simple & Clear)
 
@@ -16,7 +17,7 @@ Example:
 
 ```php
 $name = "Tarun";
-```
+````
 
 ---
 
@@ -103,7 +104,7 @@ else
 
 ## ✅ Output of the Code
 
-```
+```text
 Tarun
 Anuj
 Priya
@@ -147,7 +148,7 @@ echo $A." ".$a;
 
 ✅ **Output:**
 
-```
+```text
 Hi Hello
 ```
 

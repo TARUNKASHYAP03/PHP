@@ -1,5 +1,7 @@
 
+<!-- markdownlint-disable MD041 -->
 ---
+<!-- markdownlint-enable MD041 -->
 
 # 📘 PHP Constants — Complete Guide (Beginner to Advanced)
 
@@ -8,7 +10,7 @@ They are used for fixed data such as API keys, database credentials, company nam
 
 ---
 
-# ✅ What is a Constant?
+## ✅ What is a Constant?
 
 A **constant** is like a variable, but:
 
@@ -26,7 +28,7 @@ const NAME = "Tarun";
 
 ---
 
-# ✅ Why Use Constants?
+## ✅ Why Use Constants?
 
 Use constants when the value must stay the same, such as:
 
@@ -46,13 +48,13 @@ const VERSION = "1.0.0";
 
 ---
 
-# ✅ How to Define Constants in PHP?
+## ✅ How to Define Constants in PHP?
 
 PHP supports **two methods** to define constants:
 
 ---
 
-# ✅ ✅ Method 1: Using `const`
+### ✅ Method 1: Using `const`
 
 (Recommended, clean, faster)
 
@@ -69,7 +71,7 @@ echo NAME;
 
 ---
 
-# ✅ ✅ Method 2: Using `define()`
+### ✅ Method 2: Using `define()`
 
 (Most flexible)
 
@@ -86,7 +88,7 @@ echo DATA;
 
 ---
 
-# ✅ Output Example
+## ✅ Output Example
 
 Given code:
 
@@ -98,13 +100,13 @@ echo data;
 
 Output:
 
-```
+```text
 Tarun Kumar
 ```
 
 ---
 
-# ✅ Rules of Constants
+## ✅ Rules of Constants
 
 ### ✅ 1. Constants do NOT use `$`
 
@@ -131,10 +133,10 @@ echo NAME;   // ✅ Tarun
 echo name;   // ❌ Undefined constant
 ```
 
-🔥 If you want case-insensitive constants (rare), use:
+🔥 If you want case-insensitive constants (rare):
 
 ```php
-define("DATA", "Hello", true); // third parameter true = case-insensitive
+define("DATA", "Hello", true);
 ```
 
 ---
@@ -154,12 +156,12 @@ PI = 3.15;   // ❌ Error
 const A = "Hello";
 const B = 125;
 const C = true;
-const D = ["php","mysql","js"];
+const D = ["php", "mysql", "js"];
 ```
 
 ---
 
-# ✅ Magic Constants (Advanced but simple)
+## ✅ Magic Constants (Advanced but simple)
 
 PHP provides **predefined constants** that automatically change based on the script location.
 
@@ -180,15 +182,13 @@ echo __FILE__;
 
 Output:
 
-```
+```text
 C:/xampp/htdocs/project/index.php
 ```
 
 ---
 
-# ✅ Advanced: Constant Arrays
-
-PHP allows **array constants** (from PHP 5.6+):
+## ✅ Advanced: Constant Arrays
 
 ```php
 const USERS = ["Tarun", "Anuj", "Priya"];
@@ -198,7 +198,7 @@ echo USERS[1];   // Output: Anuj
 
 ---
 
-# ✅ Advanced: Constants inside Classes (OOP)
+## ✅ Advanced: Constants inside Classes (OOP)
 
 ```php
 class Test {
@@ -210,7 +210,7 @@ echo Test::PI;
 
 ---
 
-# ✅ Final Code Summary (Your Provided Code)
+## ✅ Final Code Summary (Your Provided Code)
 
 ```php
 define('data', 'Tarun Kumar');
@@ -225,25 +225,25 @@ echo data;
 
 ✅ Output:
 
-```
+```text
 Tarun Kumar
 ```
 
 ---
 
-# ✅ Quick Revision Table
+## ✅ Quick Revision Table
 
-| Feature         | Variable            | Constant              |
-| --------------- | ------------------- | --------------------- |
-| Starts with `$` | ✅ Yes               | ❌ No                  |
-| Change value    | ✅ Yes               | ❌ No                  |
-| Case Sensitive  | ✅ Yes               | ✅ Yes                 |
-| Created with    | `$var = ""`         | `const` or `define()` |
-| Global Access   | ❌ No (needs global) | ✅ Yes                 |
+| Feature         | Variable    | Constant              |
+| --------------- | ----------- | --------------------- |
+| Starts with `$` | ✅ Yes       | ❌ No                  |
+| Change value    | ✅ Yes       | ❌ No                  |
+| Case Sensitive  | ✅ Yes       | ✅ Yes                 |
+| Created with    | `$var = ""` | `const` or `define()` |
+| Global Access   | ❌ No        | ✅ Yes                 |
 
 ---
 
-# ✅ Example Uses in Real Projects
+## ✅ Example Uses in Real Projects
 
 ### ✅ Website settings
 
@@ -268,11 +268,11 @@ const VERSION = "2.5.1";
 
 ---
 
-# ✅ Practice Questions
+## ✅ Practice Questions
 
 ### **Q1:** Which is valid?
 
-```
+```text
 1. define("name", "Tarun");
 2. const name = "Tarun";
 3. const NAME = "Tarun";
@@ -294,7 +294,7 @@ echo A + B;
 
 ✅ Output:
 
-```
+```text
 30
 ```
 

@@ -1,5 +1,6 @@
-
+<!-- markdownlint-disable MD041 -->
 ---
+<!-- markdownlint-enable MD041 -->
 
 # 📘 PHP echo & print — Complete Guide (Beginner → Advanced + Interview Ready)
 
@@ -8,24 +9,24 @@ This guide explains everything from basics to advanced usage so you never need a
 
 ---
 
-# ✅ 1. What is `echo` in PHP?
+## ✅ 1. What is `echo` in PHP
 
 `echo` is a **language construct** used to display output on the web page.
 
-✅ Fast
-✅ Can print multiple values
-✅ Most commonly used
+✅ Fast  
+✅ Can print multiple values  
+✅ Most commonly used  
 ❌ Does not return any value
 
-### Example:
+### Example
 
 ```php
 echo "Hello World";
-```
+````
 
 ---
 
-# ✅ 2. What is `print` in PHP?
+## ✅ 2. What is `print` in PHP
 
 `print` is also a **language construct** but:
 
@@ -34,7 +35,7 @@ echo "Hello World";
 ❌ Slightly slower than echo
 ❌ Can print only one string at a time
 
-### Example:
+### Example1
 
 ```php
 print "Hello World";
@@ -42,7 +43,7 @@ print "Hello World";
 
 ---
 
-# ✅ 3. Difference Between echo & print
+## ✅ 3. Difference Between echo & print
 
 | Feature            | echo        | print           |
 | ------------------ | ----------- | --------------- |
@@ -54,7 +55,7 @@ print "Hello World";
 
 ---
 
-# ✅ 4. Syntax of `echo`
+## ✅ 4. Syntax of `echo`
 
 ```php
 echo "Hello";
@@ -67,7 +68,7 @@ echo "Hello", " World";   // multiple outputs
 
 ---
 
-# ✅ 5. Syntax of `print`
+## ✅ 5. Syntax of `print`
 
 ```php
 print "Hello";
@@ -88,15 +89,15 @@ if (print("Hello")) {
 }
 ```
 
-Output:
+### Output
 
-```
+```text
 Hello Printed
 ```
 
 ---
 
-# ✅ 6. Printing Variables
+## ✅ 6. Printing Variables
 
 ```php
 $name = "Tarun";
@@ -107,7 +108,7 @@ print $name;
 
 ---
 
-# ✅ 7. HTML with echo/print
+## ✅ 7. HTML with echo/print
 
 ```php
 echo "<h1>Welcome</h1>";
@@ -116,7 +117,7 @@ echo "<p>This is PHP.</p>";
 
 ---
 
-# ✅ 8. echo with Concatenation
+## ✅ 8. echo with Concatenation
 
 ```php
 $name = "Tarun";
@@ -125,7 +126,7 @@ echo "My name is " . $name;
 
 ---
 
-# ✅ 9. echo with Comma vs Dot
+## ✅ 9. echo with Comma vs Dot
 
 ✅ `echo` can use commas:
 
@@ -141,7 +142,7 @@ print "Hello " . "World";
 
 ---
 
-# ✅ 10. Multiline echo/print
+## ✅ 10. Multiline echo/print
 
 ```php
 echo "Line 1<br>
@@ -151,7 +152,7 @@ Line 3";
 
 ---
 
-# ✅ 11. echo with Variables + HTML
+## ✅ 11. echo with Variables + HTML
 
 ```php
 $age = 21;
@@ -160,7 +161,7 @@ echo "<p>Your age is <b>$age</b></p>";
 
 ---
 
-# ✅ 12. echo with escaping quotes
+## ✅ 12. echo with escaping quotes
 
 ```php
 echo "He said \"Hello\"";
@@ -168,7 +169,7 @@ echo "He said \"Hello\"";
 
 ---
 
-# ✅ 13. echo with heredoc (Advanced)
+## ✅ 13. echo with heredoc (Advanced)
 
 ```php
 echo <<<TEXT
@@ -179,7 +180,7 @@ TEXT;
 
 ---
 
-# ✅ 14. echo with nowdoc (Advanced)
+## ✅ 14. echo with nowdoc (Advanced)
 
 ```php
 echo <<<'TEXT'
@@ -189,7 +190,7 @@ TEXT;
 
 ---
 
-# ✅ 15. echo inside PHP + HTML page
+## ✅ 15. echo inside PHP + HTML page
 
 ```php
 <!DOCTYPE html>
@@ -204,15 +205,15 @@ TEXT;
 
 ---
 
-# ✅ 16. Output Arrays (Common Interview Trick)
+## ✅ 16. Output Arrays (Common Interview Trick)
 
-❌ Wrong:
+❌ Wrong
 
 ```php
 echo $arr;  // Warning: Array to string conversion
 ```
 
-✅ Correct:
+✅ Correct
 
 ```php
 print_r($arr);
@@ -221,7 +222,7 @@ var_dump($arr);  // most detailed
 
 ---
 
-# ✅ 17. echo vs print vs print_r vs var_dump
+## ✅ 17. echo vs print vs print_r vs var_dump
 
 | Function   | Purpose                                   |
 | ---------- | ----------------------------------------- |
@@ -232,9 +233,9 @@ var_dump($arr);  // most detailed
 
 ---
 
-# ✅ 18. echo with Backticks (Common Mistake)
+## ✅ 18. echo with Backticks (Common Mistake)
 
-❌ Backticks do NOT output text:
+❌ Backticks do NOT output text
 
 ```php
 `echo hello`;   // This runs shell commands, NOT php echo
@@ -242,7 +243,7 @@ var_dump($arr);  // most detailed
 
 ---
 
-# ✅ 19. echo in short tags (advanced)
+## ✅ 19. echo in short tags (Advanced)
 
 ```php
 <?= "Hello World"; ?>
@@ -256,7 +257,7 @@ Equivalent to:
 
 ---
 
-# ✅ 20. echo in Loops
+## ✅ 20. echo in Loops
 
 ```php
 for ($i = 1; $i <= 5; $i++) {
@@ -266,7 +267,7 @@ for ($i = 1; $i <= 5; $i++) {
 
 ---
 
-# ✅ 21. echo in Functions
+## ✅ 21. echo in Functions
 
 ```php
 function show() {
@@ -278,7 +279,7 @@ show();
 
 ---
 
-# ✅ 22. echo JSON (common API usage)
+## ✅ 22. echo JSON (Common API usage)
 
 ```php
 $data = ["name" => "Tarun"];
@@ -287,7 +288,7 @@ echo json_encode($data);
 
 ---
 
-# ✅ 23. echo using ternary operator
+## ✅ 23. echo using ternary operator
 
 ```php
 echo ($age >= 18) ? "Adult" : "Minor";
@@ -295,7 +296,7 @@ echo ($age >= 18) ? "Adult" : "Minor";
 
 ---
 
-# ✅ 24. echo Buffering (Advanced: Interview)
+## ✅ 24. echo Buffering (Advanced: Interview)
 
 ```php
 ob_start();
@@ -311,7 +312,7 @@ Useful for:
 
 ---
 
-# ✅ 25. Performance Comparison
+## ✅ 25. Performance Comparison
 
 ✅ `echo` is slightly faster
 ✅ `print` is slower because it returns `1`
@@ -320,9 +321,9 @@ But difference is extremely small.
 
 ---
 
-# ✅ Interview Questions (100% Common)
+## ✅ Interview Questions (100% Common)
 
-### **Q1: Difference between echo and print?**
+### Q1 Difference between echo and print
 
 * echo is faster
 * echo has no return
@@ -330,7 +331,7 @@ But difference is extremely small.
 * print returns 1
 * print can print only one string
 
-### **Q2: Can echo print multiple strings?**
+### Q2 Can echo print multiple strings
 
 ✅ Yes
 
@@ -338,11 +339,11 @@ But difference is extremely small.
 echo "A","B","C";
 ```
 
-### **Q3: Which one returns a value?**
+### Q3 Which one returns a value
 
 ✅ print returns **1**
 
-### **Q4: Can print be used in expressions?**
+### Q4 Can print be used in expressions
 
 ✅ Yes
 
@@ -350,73 +351,73 @@ echo "A","B","C";
 if (print "Hi") {}
 ```
 
-### **Q5: Which is faster?**
+### Q5 Which is faster
 
 ✅ echo
 
-### **Q6: echo vs print_r?**
+### Q6 echo vs print_r
 
 * echo prints simple text
 * print_r prints arrays & objects
 
-### **Q7: echo vs var_dump?**
+### Q7 echo vs var_dump
 
 * echo: simple output
 * var_dump: type + length + structure
 
-### **Q8: What is `<?= ?>`?**
+### Q8 What is `<?= ?>`
 
 Short echo tag.
 
-### **Q9: How to print a multi-line string?**
+### Q9 How to print a multi-line string
 
-Use Heredoc or string with breaks.
+Use Heredoc or string with line breaks.
 
-### **Q10: Can echo return a value?**
+### Q10 Can echo return a value
 
 ❌ No.
 
 ---
 
-# ✅ Practice Questions
+## ✅ Practice Questions
 
-### **Q1:** What will be the output?
+### Q1 What will be the output
 
 ```php
 echo "10" + 5;
 ```
 
-✅ Output:
+✅ Output
 
-```
+```text
 15
 ```
 
-### **Q2:**
+### Q2 Practice
 
 ```php
 print "Hello" . print("World");
 ```
 
-✅ Output:
+✅ Output
 
-```
+```text
 World1Hello1
 ```
 
-### **Q3:**
+### Q3 Practice
 
 ```php
 echo "A","B",5;
 ```
 
-✅ Output:
+✅ Output
 
-```
+```text
 AB5
 ```
 
-### **Q4:**
+### Q4 Practice
 
 ```php
 if (print "PHP") {
@@ -424,15 +425,15 @@ if (print "PHP") {
 }
 ```
 
-✅ Output:
+✅ Output
 
-```
+```text
 PHP TRUE
 ```
 
 ---
 
-# ✅ Final Summary
+## ✅ Final Summary
 
 | Topic             | echo   | print           |
 | ----------------- | ------ | --------------- |
@@ -443,4 +444,4 @@ PHP TRUE
 | Most Used         | ✅ echo |                 |
 
 ---
-
+---
